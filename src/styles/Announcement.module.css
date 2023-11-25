@@ -1,0 +1,13 @@
+.announcement-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1C300;
+    height: 40px;
+}
+
+.announcement{
+    font-family: 'Made Tommy Soft Regular', sans-serif;
+    font-size: .8125rem;
+    font-weight: 700;
+}

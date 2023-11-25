@@ -1,0 +1,205 @@
+.nav {
+  position: sticky;
+  top: 0;
+  /* width: 100vw; */
+  background: #212122;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 0 50px;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Hamburger button */
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 45px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+/* Styling the hamburger lines */
+.btn-line {
+  width: 28px;
+  height: 2px;
+  margin: 0 0 5px 0;
+  background: white;
+  transition: all 0.5s ease-out;
+}
+
+/* Adding transform to the X */
+.btn-line1 {
+  transform: rotate(45deg) translate(5px, 3px);
+}
+
+.btn-line2 {
+  opacity: 0;
+}
+
+.btn-line3 {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+.links li{
+  list-style-type: none;
+}
+.links a {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+.links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: #E1C300;
+  padding-left: 1.5rem;
+}
+.social-icons li{
+  list-style-type: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-container {
+  height: 10rem;
+}
+@media screen and (min-width: 1068px) {
+  .nav-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    position: relative;
+    padding: 0;
+    left: 42%;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .links-container {
+    margin-left: -110%;
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+    font-size: 15px;
+    font-family: 'Made Tommy Soft Regular', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons2{
+    display: none;
+  }
+  .social-icons3{
+    display: none;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #fff;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    font-family: 'Made Tommy Soft Regular', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .social-icons a:hover {
+    color: #E1C300;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  .social-icons {
+    display: none;
+  }
+  .social-icons3 {
+    display: none;
+  }
+  .social-icons2 {
+    display: flex;
+    float: right;
+    margin-top: -60px;
+  }
+  .social-icons2 a {
+    margin: 0 0.5rem;
+    color: #fff;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    font-family: 'Made Tommy Soft Regular', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .social-icons2 a:hover {
+    color: #E1C300;
+  }
+
+  .menu-btn{
+    position: absolute;
+    left: 30px;
+  }
+
+  .logo{
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .social-icons {
+    display: none;
+  }
+  .social-icons2 {
+    display: none;
+  }
+  .social-icons3 {
+    display: flex;
+    float: right;
+    margin-top: -60px;
+  }
+  .social-icons3 a {
+    margin: 0 0.5rem;
+    color: #fff;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    font-family: 'Made Tommy Soft Regular', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .social-icons3 a:hover {
+    color: #E1C300;
+  }
+
+  .menu-btn{
+    position: absolute;
+    left: 30px;
+  }
+
+  .logo{
+    position: relative;
+    left: 35%;
+  }
+}
